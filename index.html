@@ -8,7 +8,7 @@
 :root{
   --bg:#EDE6DA; --surface:#FFFFFF; --ink:#0A2A45; --muted:#55636E; --line:#DCD2C3; --accent:#A85A12; --chip:#FFFFFF; --frame:rgba(10,42,69,.28); --drop:rgba(10,42,69,.35);
   /* фирменные цвета, сняты с флаеров и логотипа; от темы страницы не зависят */
-  --b-blue:#074289; --b-navy:#042E61; --b-orange:#F59F43; --b-teal:#0E4A4E; --b-cream:#FFFAF3; --b-sky:#72C2EA; --b-white:#FFFFFF;
+  --b-blue:#074289; --b-navy:#042E61; --b-orange:#F59F43; --b-teal:#0E4A4E; --b-cream:#FFFAF3; --b-sky:#72C2EA; --b-emerald:#0A6E5A; --b-white:#FFFFFF;
   --f-head:"Montserrat","Arial Black",Arial,sans-serif;
   --f-body:"Manrope","Segoe UI",Roboto,Arial,sans-serif;
   --f-hand:"Caveat","Segoe Print","Comic Sans MS",cursive;
@@ -93,6 +93,13 @@ td.num{white-space:nowrap;font-variant-numeric:tabular-nums;font-weight:600}
 .vb .boxes{margin-top:auto;display:grid;gap:2.4cqw;font:600 4cqw/1.2 var(--f-body)}
 .vb .boxes span{display:flex;gap:2.6cqw;align-items:center}
 .vb .boxes span::before{content:"";width:4.4cqw;height:4.4cqw;border:.6cqw solid var(--b-orange);border-radius:.8cqw;flex:none}
+
+/* ===== вариант Г: Б в изумрудном ===== */
+.ve .cv-shade{background:linear-gradient(180deg,rgba(5,52,43,.38) 0%,rgba(5,52,43,0) 22%,rgba(5,52,43,0) 50%,rgba(5,52,43,.8) 90%)}
+.ve .cv-shade.top{background:linear-gradient(180deg,rgba(5,52,43,.38) 0%,rgba(5,52,43,0) 26%)}
+.ve.waved,.ve .wave,.ve .bubble{background:var(--b-emerald)}
+.ve .bubble{box-shadow:0 2cqw 6cqw rgba(5,52,43,.3)}
+.ve.on-cream .big,.ve.on-cream .hand,.ve.framed .hand{color:var(--b-emerald)}
 
 /* ===== вариант В: шахматка ===== */
 .vc .cv-ph{filter:saturate(.96) brightness(1.04) contrast(.98)}
@@ -216,7 +223,7 @@ button:focus-visible,input:focus-visible{outline:2px solid var(--accent);outline
     <div class="eyebrow">@neobhodima_travel · обложки и сетка · версия 3 · 27.10.2026</div>
     <h1>Брендбук Instagram</h1>
     <p class="lead">Дополнение к брендбуку от 26.10: один шаблон обложки для всех рубрик, карусели, закрепы, хайлайты и лента целиком. Для того, кто делает публикации в Canva.</p>
-    <p class="note">На странице три варианта ленты на выбор. <a href="#covers">А — один шаблон</a>: всё одинаково, меняется только фото. <a href="#var-b">Б — аккуратное разнообразие</a>: три подложки по строгим правилам. <a href="#var-c">В — много фото, минимум текста</a>: шахматка из постов с текстом и постов-фото с людьми. Цвета, шрифты, форматы и хайлайты общие для всех трёх.</p>
+    <p class="note">На странице четыре варианта ленты на выбор. <a href="#covers">А — один шаблон</a>: всё одинаково, меняется только фото. <a href="#var-b">Б — аккуратное разнообразие</a>: у каждой рубрики своя подача. <a href="#var-c">В — много фото, минимум текста</a>: шахматка из постов с текстом и постов-фото с людьми. <a href="#var-d">Г — вариант Б в изумрудном</a> вместо синего. Шрифты, форматы и хайлайты общие для всех.</p>
     <p class="note">За основу взяты логотип, флаеры «Возвращение в лето» и «Восточное Средиземноморье» из Canva, рубрики и правила брендбука от 26.10 и список хайлайтов из документа от 26.10. Жёлтые плашки и зелёные хайлайты из старой ленты больше не используем.</p>
   </header>
 
@@ -431,6 +438,29 @@ button:focus-visible,input:focus-visible{outline:2px solid var(--accent);outline
     </div>
   </section>
 
+  <section class="sec" id="var-d">
+    <div class="sec-head">
+      <div class="eyebrow">Вариант Г</div>
+      <h2>Вариант Б в изумрудном</h2>
+      <p class="muted">Те же подачи и порядок дней, что в Б. Синий заменён изумрудным #0A6E5A: волна у «Предложения», «сообщение» у «Честного вопроса», цена в «Разборе чека», затемнение фото. Бирюза меток и оранжевый цены остаются из логотипа: изумруд с ними в одной гамме, поэтому лента выглядит спокойнее и «курортнее», чем с синим.</p>
+    </div>
+    <div class="palette" style="grid-template-columns:repeat(4,minmax(0,1fr));max-width:620px">
+      <div class="sw"><div class="sw-chip" style="background:var(--b-emerald);color:#fff">#0A6E5A</div><b>Изумрудный</b><small>Волна, «сообщение», цена в чеке, затемнение.</small></div>
+      <div class="sw"><div class="sw-chip" style="background:var(--b-teal);color:var(--b-cream)">#0E4A4E</div><b>Бирюза</b><small>Метки, чек-лист.</small></div>
+      <div class="sw"><div class="sw-chip" style="background:var(--b-orange);color:var(--b-teal)">#F59F43</div><b>Оранжевый</b><small>Цена, кодовое слово.</small></div>
+      <div class="sw"><div class="sw-chip" style="background:var(--b-cream);color:var(--b-emerald)">#FFFAF3</div><b>Крем</b><small>Чек, рамка, слайды.</small></div>
+    </div>
+    <div class="tpls" id="tplsD"></div>
+    <div class="feed-wrap">
+      <div class="phone" aria-label="Макет профиля, вариант Г"><div class="profslot"></div><div class="grid" id="feedD"></div></div>
+      <div class="legend">
+        <h3>Чем отличается от Б</h3>
+        <p class="muted small">Только цветом. Порядок дней, шрифты, метки и правила — как в варианте Б.</p>
+        <p class="muted small">Если выберете Г, синий остаётся только на флаерах для сторис и в хайлайтах. Хайлайты тогда тоже лучше перевести в изумрудный, чтобы профиль был в одном цвете.</p>
+      </div>
+    </div>
+  </section>
+
   <section class="sec" id="highlights">
     <div class="sec-head">
       <div class="eyebrow">Хайлайты</div>
@@ -609,6 +639,11 @@ var FB=[
   {c:{kind:'bubble',ph:'athens-caryatids',lbl:'Честный вопрос',ttl:'Вы точно не мошенники?',hand:'отвечаем честно'}}
 ];
 document.getElementById('feedB').innerHTML=FB.map(function(x){return '<div class="cell">'+(x.pin?PIN:'')+coverB(x.c,'r34')+'</div>';}).join('');
+
+/* вариант Г */
+function coverD(d,mode){return coverB(d,mode).replace('class="cv vb ','class="cv vb ve ');}
+document.getElementById('tplsD').innerHTML=TB.map(function(x){return '<div class="tpl">'+coverD(x[2],x[3])+'<h3>'+x[0]+' <small>'+x[1]+'</small></h3></div>';}).join('');
+document.getElementById('feedD').innerHTML=FB.map(function(x){return '<div class="cell">'+(x.pin?PIN:'')+coverD(x.c,'r34')+'</div>';}).join('');
 
 /* вариант В */
 function coverC(d,mode){
