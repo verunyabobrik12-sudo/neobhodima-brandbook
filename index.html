@@ -119,6 +119,11 @@ td.num{white-space:nowrap;font-variant-numeric:tabular-nums;font-weight:600}
 .vf .tint{background:linear-gradient(180deg,rgba(7,84,70,.62) 0%,rgba(7,84,70,.18) 32%,rgba(7,84,70,.18) 50%,rgba(7,84,70,.9) 84%)}
 .vf .lbl:not(.hot){background:var(--b-mid)}
 #var-f .hl i:not(.hot){background:var(--b-mid)}
+/* ===== вариант Ж: Е с бирюзовым градиентом ===== */
+.vg .cv-shade{background:linear-gradient(180deg,rgba(14,74,78,.42) 0%,rgba(14,74,78,0) 22%,rgba(14,74,78,0) 50%,rgba(14,74,78,.86) 90%)}
+.vg .cv-shade.top{background:linear-gradient(180deg,rgba(14,74,78,.42) 0%,rgba(14,74,78,0) 26%)}
+.vg .tint{background:linear-gradient(180deg,rgba(14,74,78,.62) 0%,rgba(14,74,78,.18) 32%,rgba(14,74,78,.18) 50%,rgba(14,74,78,.9) 84%)}
+#var-g .hl i:not(.hot){background:var(--b-mid)}
 .hl-pair{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
 .hl-pair i{width:58px;height:58px;border-radius:50%;display:grid;place-items:center}
 .hl-pair svg{width:28px;height:28px}
@@ -245,7 +250,7 @@ button:focus-visible,input:focus-visible{outline:2px solid var(--accent);outline
     <div class="eyebrow">@neobhodima_travel · обложки и сетка · версия 3 · 27.10.2026</div>
     <h1>Брендбук Instagram</h1>
     <p class="lead">Дополнение к брендбуку от 26.10: один шаблон обложки для всех рубрик, карусели, закрепы, хайлайты и лента целиком. Для того, кто делает публикации в Canva.</p>
-    <p class="note">На странице шесть вариантов ленты на выбор. <a href="#covers">А — один шаблон</a>: всё одинаково, меняется только фото. <a href="#var-b">Б — аккуратное разнообразие</a>: у каждой рубрики своя подача. <a href="#var-c">В — много фото, минимум текста</a>: шахматка из постов с текстом и постов-фото с людьми. <a href="#var-d">Г — вариант Б в изумрудном</a> вместо синего. <a href="#var-e">Д — тёмный изумруд</a> и <a href="#var-f">Е — изумруд средней глубины</a>: весь профиль и сторис зелёные, как логотип, без синего. Шрифты, форматы и хайлайты общие для всех.</p>
+    <p class="note">На странице семь вариантов ленты на выбор. <a href="#covers">А — один шаблон</a>: всё одинаково, меняется только фото. <a href="#var-b">Б — аккуратное разнообразие</a>: у каждой рубрики своя подача. <a href="#var-c">В — много фото, минимум текста</a>: шахматка из постов с текстом и постов-фото с людьми. <a href="#var-d">Г — вариант Б в изумрудном</a> вместо синего. <a href="#var-e">Д — тёмный изумруд</a> и <a href="#var-f">Е — изумруд средней глубины</a>: весь профиль и сторис зелёные, как логотип, без синего. <a href="#var-g">Ж — Е с бирюзовым градиентом</a> на фото. Шрифты, форматы и хайлайты общие для всех.</p>
     <p class="note">За основу взяты логотип, флаеры «Возвращение в лето» и «Восточное Средиземноморье» из Canva, рубрики и правила брендбука от 26.10 и список хайлайтов из документа от 26.10. Жёлтые плашки и зелёные хайлайты из старой ленты больше не используем.</p>
   </header>
 
@@ -534,6 +539,29 @@ button:focus-visible,input:focus-visible{outline:2px solid var(--accent);outline
     </div>
   </section>
 
+  <section class="sec" id="var-g">
+    <div class="sec-head">
+      <div class="eyebrow">Вариант Ж</div>
+      <h2>Е с бирюзовым градиентом</h2>
+      <p class="muted">Копия варианта Е: изумруд #075446 в волне, «сообщении», цене, метках и хайлайтах. Отличие одно — затемнение фото и подложка чек-листа сделаны бирюзой с логотипа #0E4A4E, а не тёмным зелёным. Градиент получается холоднее, фото выглядят свежее и ближе к морю.</p>
+    </div>
+    <div class="palette" style="grid-template-columns:repeat(4,minmax(0,1fr));max-width:620px">
+      <div class="sw"><div class="sw-chip" style="background:var(--b-mid);color:#fff">#075446</div><b>Изумруд</b><small>Волна, «сообщение», цена, метки, хайлайты, сторис.</small></div>
+      <div class="sw"><div class="sw-chip" style="background:linear-gradient(180deg,rgba(14,74,78,.15),var(--b-teal));color:#fff">#0E4A4E</div><b>Бирюзовый градиент</b><small>Затемнение фото, чек-лист.</small></div>
+      <div class="sw"><div class="sw-chip" style="background:var(--b-orange);color:var(--b-mid)">#F59F43</div><b>Оранжевый</b><small>Цена, кодовое слово, «Актуальное».</small></div>
+      <div class="sw"><div class="sw-chip" style="background:var(--b-cream);color:var(--b-mid)">#FFFAF3</div><b>Крем</b><small>Чек, рамка, слайды.</small></div>
+    </div>
+    <div class="tpls" id="tplsG"></div>
+    <div class="feed-wrap">
+      <div class="phone" aria-label="Макет профиля, вариант Ж"><div class="profslot"></div><div class="grid" id="feedG"></div></div>
+      <div class="legend">
+        <h3>Чем отличается от Е</h3>
+        <p class="muted small">Только градиентом на фото. Плашки, метки и хайлайты — изумруд, как в Е. Порядок дней, шрифты и правила — как в Б.</p>
+        <p class="muted small">В Canva: прямоугольник на всё фото с градиентом от прозрачного к #0E4A4E снизу, прозрачность сверху 0%, снизу 85–90%.</p>
+      </div>
+    </div>
+  </section>
+
   <section class="sec" id="highlights">
     <div class="sec-head">
       <div class="eyebrow">Хайлайты</div>
@@ -727,6 +755,11 @@ document.getElementById('feedE').innerHTML=FB.map(function(x){return '<div class
 function coverF(d,mode){return coverB(d,mode).replace('class="cv vb ','class="cv vb vf ');}
 document.getElementById('tplsF').innerHTML=TB.map(function(x){return '<div class="tpl">'+coverF(x[2],x[3])+'<h3>'+x[0]+' <small>'+x[1]+'</small></h3></div>';}).join('');
 document.getElementById('feedF').innerHTML=FB.map(function(x){return '<div class="cell">'+(x.pin?PIN:'')+coverF(x.c,'r34')+'</div>';}).join('');
+
+/* вариант Ж */
+function coverG(d,mode){return coverB(d,mode).replace('class="cv vb ','class="cv vb vf vg ');}
+document.getElementById('tplsG').innerHTML=TB.map(function(x){return '<div class="tpl">'+coverG(x[2],x[3])+'<h3>'+x[0]+' <small>'+x[1]+'</small></h3></div>';}).join('');
+document.getElementById('feedG').innerHTML=FB.map(function(x){return '<div class="cell">'+(x.pin?PIN:'')+coverG(x.c,'r34')+'</div>';}).join('');
 
 /* вариант В */
 function coverC(d,mode){
