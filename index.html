@@ -8,7 +8,7 @@
 :root{
   --bg:#EDE6DA; --surface:#FFFFFF; --ink:#0A2A45; --muted:#55636E; --line:#DCD2C3; --accent:#A85A12; --chip:#FFFFFF; --frame:rgba(10,42,69,.28); --drop:rgba(10,42,69,.35);
   /* фирменные цвета, сняты с флаеров и логотипа; от темы страницы не зависят */
-  --b-blue:#074289; --b-navy:#042E61; --b-orange:#F59F43; --b-teal:#0E4A4E; --b-cream:#FFFAF3; --b-sky:#72C2EA; --b-emerald:#0A6E5A; --b-deep:#043A30; --b-white:#FFFFFF;
+  --b-blue:#074289; --b-navy:#042E61; --b-orange:#F59F43; --b-teal:#0E4A4E; --b-cream:#FFFAF3; --b-sky:#72C2EA; --b-emerald:#0A6E5A; --b-deep:#043A30; --b-mid:#075446; --b-white:#FFFFFF;
   --f-head:"Montserrat","Arial Black",Arial,sans-serif;
   --f-body:"Manrope","Segoe UI",Roboto,Arial,sans-serif;
   --f-hand:"Caveat","Segoe Print","Comic Sans MS",cursive;
@@ -110,6 +110,15 @@ td.num{white-space:nowrap;font-variant-numeric:tabular-nums;font-weight:600}
 .vd .tint{background:linear-gradient(180deg,rgba(4,58,48,.66) 0%,rgba(4,58,48,.2) 32%,rgba(4,58,48,.2) 50%,rgba(4,58,48,.9) 84%)}
 .vd .lbl:not(.hot){background:var(--b-deep)}
 #var-e .hl i:not(.hot){background:var(--b-deep)}
+/* ===== вариант Е: средний изумруд ===== */
+.vf .cv-shade{background:linear-gradient(180deg,rgba(3,38,31,.4) 0%,rgba(3,38,31,0) 22%,rgba(3,38,31,0) 50%,rgba(3,38,31,.82) 90%)}
+.vf .cv-shade.top{background:linear-gradient(180deg,rgba(3,38,31,.4) 0%,rgba(3,38,31,0) 26%)}
+.vf.waved,.vf .wave,.vf .bubble{background:var(--b-mid)}
+.vf .bubble{box-shadow:0 2cqw 6cqw rgba(3,38,31,.35)}
+.vf.on-cream .big,.vf.on-cream .hand,.vf.framed .hand{color:var(--b-mid)}
+.vf .tint{background:linear-gradient(180deg,rgba(7,84,70,.62) 0%,rgba(7,84,70,.18) 32%,rgba(7,84,70,.18) 50%,rgba(7,84,70,.9) 84%)}
+.vf .lbl:not(.hot){background:var(--b-mid)}
+#var-f .hl i:not(.hot){background:var(--b-mid)}
 .hl-pair{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
 .hl-pair i{width:58px;height:58px;border-radius:50%;display:grid;place-items:center}
 .hl-pair svg{width:28px;height:28px}
@@ -236,7 +245,7 @@ button:focus-visible,input:focus-visible{outline:2px solid var(--accent);outline
     <div class="eyebrow">@neobhodima_travel · обложки и сетка · версия 3 · 27.10.2026</div>
     <h1>Брендбук Instagram</h1>
     <p class="lead">Дополнение к брендбуку от 26.10: один шаблон обложки для всех рубрик, карусели, закрепы, хайлайты и лента целиком. Для того, кто делает публикации в Canva.</p>
-    <p class="note">На странице пять вариантов ленты на выбор. <a href="#covers">А — один шаблон</a>: всё одинаково, меняется только фото. <a href="#var-b">Б — аккуратное разнообразие</a>: у каждой рубрики своя подача. <a href="#var-c">В — много фото, минимум текста</a>: шахматка из постов с текстом и постов-фото с людьми. <a href="#var-d">Г — вариант Б в изумрудном</a> вместо синего. <a href="#var-e">Д — основной цвет тёмный изумруд</a>: весь профиль зелёный, как логотип, синий только внутри сторис. Шрифты, форматы и хайлайты общие для всех.</p>
+    <p class="note">На странице шесть вариантов ленты на выбор. <a href="#covers">А — один шаблон</a>: всё одинаково, меняется только фото. <a href="#var-b">Б — аккуратное разнообразие</a>: у каждой рубрики своя подача. <a href="#var-c">В — много фото, минимум текста</a>: шахматка из постов с текстом и постов-фото с людьми. <a href="#var-d">Г — вариант Б в изумрудном</a> вместо синего. <a href="#var-e">Д — тёмный изумруд</a> и <a href="#var-f">Е — изумруд средней глубины</a>: весь профиль и сторис зелёные, как логотип, без синего. Шрифты, форматы и хайлайты общие для всех.</p>
     <p class="note">За основу взяты логотип, флаеры «Возвращение в лето» и «Восточное Средиземноморье» из Canva, рубрики и правила брендбука от 26.10 и список хайлайтов из документа от 26.10. Жёлтые плашки и зелёные хайлайты из старой ленты больше не используем.</p>
   </header>
 
@@ -478,13 +487,12 @@ button:focus-visible,input:focus-visible{outline:2px solid var(--accent);outline
     <div class="sec-head">
       <div class="eyebrow">Вариант Д</div>
       <h2>Основной цвет — тёмный изумруд</h2>
-      <p class="muted">Подачи и порядок дней как в Б и Г. Основной цвет один — тёмный изумруд #043A30: он заметно темнее изумруда из Г и ближе всего к горам на логотипе. В профиле им сделано всё цветное: волна, «сообщение», цена в чеке, затемнение, чек-лист, метки и хайлайты. Синий в профиле не появляется: он остаётся только внутри сторис.</p>
+      <p class="muted">Подачи и порядок дней как в Б и Г. Основной цвет один — тёмный изумруд #043A30: он заметно темнее изумруда из Г и ближе всего к горам на логотипе. В профиле им сделано всё цветное: волна, «сообщение», цена в чеке, затемнение, чек-лист, метки и хайлайты. Сторис делаем в том же цвете, синего в этом варианте нет.</p>
     </div>
     <div class="palette" style="grid-template-columns:repeat(4,minmax(0,1fr));max-width:620px">
       <div class="sw"><div class="sw-chip" style="background:var(--b-deep);color:#fff">#043A30</div><b>Тёмный изумруд</b><small>Основной: всё цветное в профиле.</small></div>
       <div class="sw"><div class="sw-chip" style="background:var(--b-orange);color:var(--b-deep)">#F59F43</div><b>Оранжевый</b><small>Цена, кодовое слово, «Актуальное».</small></div>
       <div class="sw"><div class="sw-chip" style="background:var(--b-cream);color:var(--b-deep)">#FFFAF3</div><b>Крем</b><small>Чек, рамка, слайды.</small></div>
-      <div class="sw"><div class="sw-chip" style="background:var(--b-blue);color:#fff">#074289</div><b>Синий</b><small>Только внутри сторис, в профиле его нет.</small></div>
     </div>
     <div class="tpls" id="tplsE"></div>
     <div class="feed-wrap">
@@ -492,13 +500,36 @@ button:focus-visible,input:focus-visible{outline:2px solid var(--accent);outline
       <div class="legend">
         <h3>Где какой цвет</h3>
         <div class="tbl"><table style="min-width:0"><tbody>
-          <tr><td>Профиль: лента, метки, хайлайты</td><td>тёмный изумруд, акцент оранжевый</td></tr>
-          <tr><td>Сторис: фон, плашки, флаеры акций</td><td>синий, шаблоны не меняем</td></tr>
+          <tr><td>Лента, метки, хайлайты</td><td>тёмный изумруд, акцент оранжевый</td></tr>
+          <tr><td>Сторис и флаеры акций</td><td>тёмный изумруд вместо синего</td></tr>
         </tbody></table></div>
-        <p class="muted small">Сторис живут сутки и в профиле видны только как кружки хайлайтов, а кружки зелёные. Поэтому человек, который открыл профиль, видит один цвет — зелёный. Синие сторис он увидит уже внутри, и с оранжевым и кремом они выглядят как тот же бренд.</p>
+        <p class="muted small">Синих шаблонов сторис больше нет: их нужно перекрасить в Canva. Белый текст, оранжевая цена и крем на тёмном изумруде читаются так же, как на синем.</p>
         <h3>Чем отличается от Г</h3>
         <div class="hl-pair" aria-label="Изумруд из Г и тёмный изумруд из Д рядом"><i style="background:var(--b-emerald)"><svg aria-hidden="true"><use href="#i-cruise"/></svg></i><i style="background:var(--b-deep)"><svg aria-hidden="true"><use href="#i-cruise"/></svg></i><span class="muted small">Слева изумруд из Г #0A6E5A, справа тёмный из Д #043A30.</span></div>
         <p class="muted small">В Г зелёным была только лента, а хайлайты, метки и чек-лист оставались синими и бирюзовыми, поэтому основной цвет не читался. В Д в профиле один цвет.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="var-f">
+    <div class="sec-head">
+      <div class="eyebrow">Вариант Е</div>
+      <h2>Изумруд средней глубины</h2>
+      <p class="muted">Всё как в Д, только оттенок посередине: #075446 темнее изумруда из Г и светлее тёмного из Д. Профиль и сторис в одном цвете, синего нет.</p>
+    </div>
+    <div class="palette" style="grid-template-columns:repeat(3,minmax(0,1fr));max-width:480px">
+      <div class="sw"><div class="sw-chip" style="background:var(--b-mid);color:#fff">#075446</div><b>Изумруд</b><small>Основной: лента, метки, хайлайты, сторис.</small></div>
+      <div class="sw"><div class="sw-chip" style="background:var(--b-orange);color:var(--b-mid)">#F59F43</div><b>Оранжевый</b><small>Цена, кодовое слово, «Актуальное».</small></div>
+      <div class="sw"><div class="sw-chip" style="background:var(--b-cream);color:var(--b-mid)">#FFFAF3</div><b>Крем</b><small>Чек, рамка, слайды.</small></div>
+    </div>
+    <div class="tpls" id="tplsF"></div>
+    <div class="feed-wrap">
+      <div class="phone" aria-label="Макет профиля, вариант Е"><div class="profslot"></div><div class="grid" id="feedF"></div></div>
+      <div class="legend">
+        <h3>Три изумруда рядом</h3>
+        <div class="hl-pair" aria-label="Изумруды из Г, Е и Д"><i style="background:var(--b-emerald)"><svg aria-hidden="true"><use href="#i-cruise"/></svg></i><i style="background:var(--b-mid)"><svg aria-hidden="true"><use href="#i-cruise"/></svg></i><i style="background:var(--b-deep)"><svg aria-hidden="true"><use href="#i-cruise"/></svg></i><span class="muted small">Г #0A6E5A · Е #075446 · Д #043A30</span></div>
+        <p class="muted small">Е заметнее в ленте, чем Д, и спокойнее, чем Г. Д почти чёрный на телефоне в тёмной теме, Е остаётся явно зелёным.</p>
+        <p class="muted small">Порядок дней, шрифты, метки и правила — как в Б.</p>
       </div>
     </div>
   </section>
@@ -691,6 +722,11 @@ document.getElementById('feedD').innerHTML=FB.map(function(x){return '<div class
 function coverE(d,mode){return coverB(d,mode).replace('class="cv vb ','class="cv vb vd ');}
 document.getElementById('tplsE').innerHTML=TB.map(function(x){return '<div class="tpl">'+coverE(x[2],x[3])+'<h3>'+x[0]+' <small>'+x[1]+'</small></h3></div>';}).join('');
 document.getElementById('feedE').innerHTML=FB.map(function(x){return '<div class="cell">'+(x.pin?PIN:'')+coverE(x.c,'r34')+'</div>';}).join('');
+
+/* вариант Е */
+function coverF(d,mode){return coverB(d,mode).replace('class="cv vb ','class="cv vb vf ');}
+document.getElementById('tplsF').innerHTML=TB.map(function(x){return '<div class="tpl">'+coverF(x[2],x[3])+'<h3>'+x[0]+' <small>'+x[1]+'</small></h3></div>';}).join('');
+document.getElementById('feedF').innerHTML=FB.map(function(x){return '<div class="cell">'+(x.pin?PIN:'')+coverF(x.c,'r34')+'</div>';}).join('');
 
 /* вариант В */
 function coverC(d,mode){
